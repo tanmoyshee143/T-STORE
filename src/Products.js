@@ -5,6 +5,10 @@ const Products = () => {
   return <Wrapper></Wrapper>;
 };
 
+
+export default Products;
+
+
 const Wrapper = styled.section`
   .grid-filter-column {
     grid-template-columns: 0.2fr 1fr;
@@ -17,4 +21,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Products;
+
