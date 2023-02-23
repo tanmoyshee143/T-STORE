@@ -11,7 +11,7 @@ const Home = () => {
 
 
 const Wrapper = styled.section`
-background-color: ${({theme}) => theme.colors.bg};
+background-color: ${({theme}) => theme.colors.home_bg};
 width : 100%;
 height : 100%;
 `;
