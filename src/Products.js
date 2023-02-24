@@ -10,6 +10,9 @@ export default Products;
 
 
 const Wrapper = styled.section`
+
+height: 100vh;
+  background-color: ${({ theme }) => theme.colors.bg};
   .grid-filter-column {
     grid-template-columns: 0.2fr 1fr;
   }

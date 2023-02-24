@@ -4,7 +4,10 @@ const Contact = () => {
   const Wrapper = styled.section`
     padding: 9rem 0 5rem 0;
     text-align: center;
+    height: 100vh;
+    background-color: ${({ theme }) => theme.colors.bg};
 
+    
     .container {
       margin-top: 6rem;
 
