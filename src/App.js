@@ -21,6 +21,8 @@ const App = () => {
       helper : "#4C4CF6",
       bg: "#A2F687",
       header_bg: "#F17145",
+      service_bg : "#F1EA08",
+      trusted_bg : "#F297E8 ",
       footer_bg : "#0a1435",
       btn : "rgb(98 84 243)",
       border : "rgba(98, 84, 243, 0.5)",

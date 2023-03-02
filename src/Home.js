@@ -2,6 +2,8 @@
 import React from "react";
 import styled from "styled-components";
 import HeroSection from "./component/HeroSection";
+import Services from "./component/Services";
+import Truested from "./component/Truested";
 
 const Home = () => {
 
@@ -10,11 +12,13 @@ const Home = () => {
     <HeroSection
     storeName = {name}
     />
+    <Services/>
+    <Truested/>
   </Wrapper>;
 };
 
 const Wrapper = styled.section`
-  height: 100vh;
+  height: auto;
   background-color: ${({ theme }) => theme.colors.bg};
 `;
 
