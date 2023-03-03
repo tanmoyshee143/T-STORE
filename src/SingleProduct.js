@@ -4,6 +4,9 @@ const SingleProduct = () => {
   return <Wrapper></Wrapper>;
 };
 
+
+export default SingleProduct;
+
 const Wrapper = styled.section`
   .container {
     padding: 9rem 0;
@@ -76,5 +79,3 @@ const Wrapper = styled.section`
     padding: 0 2.4rem;
   }
 `;
-
-export default SingleProduct;

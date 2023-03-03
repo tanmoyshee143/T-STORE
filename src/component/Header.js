@@ -5,20 +5,6 @@ import NavBar from './NavBar';
 
 function Header() {
 
-  const MainHeader = styled.header`
-padding : 0 4.8rem;
-height : 10 rem ;
-background-color: ${({theme}) => theme.colors.header_bg};
-display : flex;
-justify-content : space-between ;
-align-items : center;
-position : relative;
-
-.logo {
-    height : 5rem;
-}
-
-`;
 
   return (
     <MainHeader className='test'>
@@ -33,3 +19,18 @@ position : relative;
 
 
 export default Header
+
+const MainHeader = styled.header`
+padding : 0 4.8rem;
+height : 10 rem ;
+background-color: ${({theme}) => theme.colors.header_bg};
+display : flex;
+justify-content : space-between ;
+align-items : center;
+position : relative;
+
+.logo {
+    height : 5rem;
+}
+
+`;

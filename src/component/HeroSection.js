@@ -1,10 +1,48 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Button } from "../styles/Button";
+import  {Button}  from "../styles/Button";
 
 const HeroSection = ({storeName="default store",props}) => {
-  const Wrapper = styled.section`
+  
+//   console.log(props)
+// console.log(props.storeName)
+
+  return (
+    <Wrapper>
+      <div className="container">
+        <div className="grid grid-two-column">
+          <div className="hero-section-data">
+            <p className="intro-data"> Welcome To</p>
+            <h1>{storeName} </h1>
+            <p>
+              My Dream Store lets you design awesome products and sell them
+              online while it takes care of everything else—from manufacturing
+              the product to packaging, delivery, and even customer service!
+            </p>
+            <NavLink>
+              <Button>Show Now</Button>
+            </NavLink>
+            </div>
+            {/* OUR HOMEPAGE IMAGE */}
+            <div className="hero-section-image">
+              <figure>
+                <img
+                  src="images/hero.jpg"
+                  alt="hero-section-photo"
+                  className="img-style"
+                />
+              </figure>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
+
+export default HeroSection;
+
+const Wrapper = styled.section`
   padding: 12rem 0;
   img {
     min-width: 10rem;
@@ -62,39 +100,3 @@ const HeroSection = ({storeName="default store",props}) => {
   }
   
   `;
-//   console.log(props)
-// console.log(props.storeName)
-
-  return (
-    <Wrapper>
-      <div className="container">
-        <div className="grid grid-two-column">
-          <div className="hero-section-data">
-            <p className="intro-data"> Welcome To</p>
-            <h1>{storeName} </h1>
-            <p>
-              My Dream Store lets you design awesome products and sell them
-              online while it takes care of everything else—from manufacturing
-              the product to packaging, delivery, and even customer service!
-            </p>
-            <NavLink>
-              <Button>Show Now</Button>
-            </NavLink>
-            </div>
-            {/* OUR HOMEPAGE IMAGE */}
-            <div className="hero-section-image">
-              <figure>
-                <img
-                  src="images/hero.jpg"
-                  alt="hero-section-photo"
-                  className="img-style"
-                />
-              </figure>
-          </div>
-        </div>
-      </div>
-    </Wrapper>
-  );
-};
-
-export default HeroSection;

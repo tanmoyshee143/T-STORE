@@ -6,10 +6,7 @@ import HeroSection from './component/HeroSection';
 const About = () => {
 
   const name = "T STORE"
-  const Wrapper = styled.section`
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.bg};
-`;
+ 
   return (
     <Wrapper>
        <HeroSection
@@ -20,3 +17,8 @@ const About = () => {
 }
 
 export default About
+
+const Wrapper = styled.section`
+height: 100vh;
+background-color: ${({ theme }) => theme.colors.bg};
+`;
