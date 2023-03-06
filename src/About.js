@@ -1,16 +1,21 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import styled from "styled-components";
 import HeroSection from './component/HeroSection';
+import { context } from './Context/ProductContext';
 
 
 const About = () => {
 
-  const name = "T STORE"
- 
+// const yourName = useContext(AppContext)
+
+  const { sName } = useContext(context);
+  
+  console.log("age to myAge",sName)
   return (
     <Wrapper>
+      {/* <div> {yourName} </div> */}
        <HeroSection
-       storeName = {name}
+       storeName = {sName}
        />
     </Wrapper>
   )
