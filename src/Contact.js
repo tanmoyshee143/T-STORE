@@ -7,6 +7,7 @@ const Contact = () => {
     <Wrapper>
       <h2 className="common-heading"> CONTACT US </h2>
       <iframe
+        title="dream-store"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.1364292853992!2d87.0894331432121!3d22.16566889408232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d12f7d9f85d75%3A0x261d959d839dfd9d!2sState%20Bank%20of%20India%20-%20Rohini%20Branch!5e1!3m2!1sen!2sin!4v1677735563950!5m2!1sen!2sin"
         width="100%"
         height="450"

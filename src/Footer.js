@@ -119,7 +119,8 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/@CWDesign"
-                    target="_blank">
+                    //target="_blank"
+                    >
                     <FaYoutube className="icons" />
                   </a>
                 </div>
