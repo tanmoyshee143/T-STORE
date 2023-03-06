@@ -29,7 +29,7 @@ const HeroSection = ({storeName="default store",props}) => {
               <figure>
                 <img
                   src="images/hero.jpg"
-                  // alt="hero-section-photo"
+                  alt="hero-section-photo"
                   className="img-style"
                 />
               </figure>
