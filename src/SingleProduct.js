@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const SingleProduct = () => {
-  return <Wrapper></Wrapper>;
+  // console.log("single product")
+  return <Wrapper>
+    <h2>SINGLE PAGE</h2>
+  </Wrapper>;
 };
 
 

@@ -1,6 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import FeatureProduct from "./component/FeatureProduct";
 import HeroSection from "./component/HeroSection";
 import Services from "./component/Services";
 import Truested from "./component/Truested";
@@ -12,6 +13,7 @@ const Home = () => {
     <HeroSection
     storeName = {name}
     />
+    <FeatureProduct/>
     <Services/>
     <Truested/>
   </Wrapper>;

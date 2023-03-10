@@ -20,6 +20,7 @@ const App = () => {
       white : "#fff",
       black : "#212529",
       helper : "#4C4CF6",
+      catagory : "#0D06E2  ",
       bg: "#A2F687",
       header_bg: "#F17145",
       service_bg : "#F1EA08",
@@ -50,7 +51,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/singleproduct/: id" element={<SingleProduct />} />
+          <Route path="/singleproduct/:id" element={<SingleProduct/>} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer/>

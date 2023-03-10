@@ -118,6 +118,12 @@ ${"" /* resuable code section  */}
       text-transform: uppercase;
       color: #5138ee;
     }
+    .intro-data-f {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: #5138ee;
+    }
    .caption {
       position: absolute;
       top: 15%;
