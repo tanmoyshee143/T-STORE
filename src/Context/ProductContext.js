@@ -15,7 +15,7 @@ const initialState = {
      products: [],
      featureProducts: [],
      isSingleLoading : false,
-     SingleProduct : {} ,
+     singleProduct : {} ,
 };
 
 
@@ -47,13 +47,17 @@ const AppContext = ({ children }) => {
 
 //  2nd API call for Single Product //
 
-const getSingleProducts = async(url) =>{
+const getSingleProduct = async(url) =>{
   dispatch({type: "SET_SINGLE-PRODUCT_LOADING"})
   try {
     const res = await axios.get(url);
-  const SingleProduct = await res.data;
+
+    // console.log("producrcontext-res",res)
+  const singleProduct = await res.data;
+
+  // console.log("producrcontext",singleProduct)
    // this below line use for REDUCER HOOK//
-   dispatch({type: "SET_SINGLE-PRODUCT_API_DATA" , payload :products})
+   dispatch({type: "SET_SINGLE-PRODUCT_API_DATA" , payload :singleProduct})
   }
   catch(error){
     dispatch ({type : "SINGLE-PRODUCT_API_ERROR"})
@@ -66,7 +70,7 @@ useEffect ( () =>{
      getProducts(API);
 },[]);
 
-  return <context.Provider value={{ sName , ...state, getSingleProducts}}>{children}</context.Provider>;
+  return <context.Provider value={{ sName , ...state, getSingleProduct}}>{children}</context.Provider>;
 };
 
 // custom hooks
